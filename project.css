@@ -1,0 +1,265 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.site-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #333;
+}
+
+.logo-sub {
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #666;
+    margin-top: -5px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 30px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #bdbdbd;
+}
+
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px; 
+    padding-bottom: 80px;
+}
+
+.split-section {
+    display: flex;
+    width: 100%;
+    min-height: 450px;
+    background-color: #fbfbfb;
+    border: 1px solid #eeeeee;
+}
+
+
+.swap-row {
+    flex-direction: row-reverse;
+}
+
+
+.text-box {
+    flex: 1;
+    width: 50%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: 300;
+    color: #bdbdbd;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.section-title span {
+    font-weight: 700;
+    color: #333333;
+}
+
+.section-desc {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #777777;
+    margin-bottom: 35px;
+}
+
+
+.btn-more {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 15px 35px;
+    background-color: #ffffff;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #e0e0e0;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.btn-more:hover {
+    background-color: #333333;
+    color: #ffffff;
+    border-color: #333333;
+}
+
+
+.image-box {
+    flex: 1;
+    width: 50%;
+    background-color: #f0f0f0;
+}
+
+.img-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-style: italic;
+    font-size: 14px;
+    background-color: #eaeaea;
+}
+
+.img-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.site-footer {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    padding: 60px 0 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.logo.light .logo-text { color: #fff; }
+.logo.light .logo-sub { color: #bbb; }
+
+.footer-left, .footer-right {
+    display: flex;
+    gap: 80px;
+    flex: 1;
+}
+
+.footer-info h3, .footer-contacts h3, .footer-social h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.footer-info ul {
+    list-style: none;
+}
+
+.footer-info ul li {
+    margin-bottom: 12px;
+}
+
+.footer-info ul li a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-info ul li a:hover { color: #fff; }
+
+.footer-contacts p {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover { color: #bdbdbd; }
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    padding: 20px 20px 0 20px;
+    border-top: 1px solid #444;
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+}
+
+
+@media (max-width: 868px) {
+    .site-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .main-nav a {
+        margin: 0 10px;
+    }
+    .split-section, .swap-row {
+        flex-direction: column; 
+    }
+    .text-box, .image-box {
+        width: 100%;
+    }
+    .image-box {
+        min-height: 250px;
+    }
+    .text-box {
+        padding: 30px;
+    }
+    .footer-left, .footer-right {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
