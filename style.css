@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.project-container{
+    width: 100%;
+    height: 100vh;
+}
+.project-content{
+    width: 400px;
+    height: 90px;
+    font-size: 25px;
+    position: relative;
+}
+.project-content h2{
+    position: absolute;
+    top: 10px;
+    left:150px ;
+    color: #BDBDBD;
+}
+.project-cards{
+    width: 100%;
+    height: 70vh;
+}
+.project-cards2{
+    width: 100%;
+    height: 35vh;
+    position: relative;
+}
+.project-card img{
+    width: 50px;
+    height: 50px;
+}
+.project-card1 img{
+    width: 500px;
+    height: 33vh;
+    position: absolute;
+    left: 150px;
+}
+.project-card2 img{
+    width: 500px;
+    height: 33vh;
+    position: absolute;
+    right: 150px;
+}
+.project-cards3{
+    width: 100%;
+    height: 35vh;
+    position: relative;
+}
+.project-card3 img{
+ width: 250px;
+ height: 33vh;
+ position: absolute;
+ left: 150px;
+ top: 20px;
+
+}
+.project-card4 img{
+ width: 350px;
+ height: 33vh;
+ position: absolute;
+ left: 510px;
+ top: 20px;
+
+}
+.project-card5 img{
+ width: 250px;
+ height: 33vh;
+ position: absolute;
+ right: 150px;
+ top: 20px;
+}
+.project-btn{
+    width: 100%;
+    height: 102px;
+    position: relative;
+}
+.project-btn button{
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    right: 150px;
+    bottom: 15px;
+    color: white;
+    background-color:#333333;
+    text-align: start;
+    padding-left: 25px;
+    font-size: 13px;
+    border: none;
+}
+.project-btn img{
+   position: absolute;
+   right: 200px;
+   bottom: 40px;
+}
+.contact-container{
+    width: 100%;
+    height: 100vh;
+}
+.page2{
+    position: relative;
+}
+.page2 img{
+    position: absolute;
+    left: 150px;
+    width: 100%;
+    height: 99.5vh;
+}
+.footer-container{
+    width: 100%;
+    height: 60vh;
+}
+.footer-part{
+    position: relative;
+
+}
+.footer-part img{
+    width: 100%;
+    height: 47vh;
+    position: absolute;
+    top: 50px;
+}
